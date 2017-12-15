@@ -1,4 +1,4 @@
-// Вьюгина Анастасия 108 группа 7 семинар 19 задача
+// Г‚ГјГѕГЈГЁГ­Г  ГЂГ­Г Г±ГІГ Г±ГЁГї 108 ГЈГ°ГіГЇГЇГ  7 Г±ГҐГ¬ГЁГ­Г Г° 19 Г§Г Г¤Г Г·Г 
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -14,19 +14,19 @@ int main()
 	}
 
 	int n = 0;
-	cout << "input n" << endl; 
+	cout << "input n" << endl; //РґР»РёРЅР° РїРѕРґСЃС‚СЂРѕРєРё
 	cin >> n;
-	char *substring = (char *)malloc((n + 1) * sizeof(char)); //Выделяем под неё память, +1 из-за символа конца строки
+	char *substring = (char *)malloc((n + 1) * sizeof(char)); //РІС‹РґРµР»СЏРµРј РїРѕРґ РЅРµРµ РїР°РјСЏС‚СЊ, +1 РёР±Рѕ СѓС‡РёС‚С‹РІР°РµРј СЃРёРјРІРѕР» РєРѕРЅС†Р° СЃС‚СЂРѕРєРё
 	cout << "Enter the substring" << endl;
 	cin >> substring;
 
-	char *s = (char *)malloc(100 * sizeof(char)); //Место под строку из файла
+	char *s = (char *)malloc(100 * sizeof(char)); //РІС‹РґРµР»СЏРµРј РјРµСЃС‚Рѕ РїРѕРґ СЃС‚СЂРѕРєСѓ РёР· С„Р°Р№Р»Р°
 	int line = 1;
 	while (!feof(fp))
 	{
-		s = fgets(s, 100, fp); //Берём строку из файла
+		s = fgets(s, 100, fp); //Р‘РµСЂРµРј СЃС‚СЂРѕРєСѓ РёР· С„Р°Р№Р»Р°
 
-		if (strstr(s, substring) != NULL) //Ищем подстроку в строке
+		if (strstr(s, substring) != NULL) //РёС‰РµРј РїРѕРґСЃС‚СЂРѕРєСѓ РІ СЃС‚СЂРѕРєРµ
 		{
 			cout << "Found on line " << line << endl;
 			return 0;
