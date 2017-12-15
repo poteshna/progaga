@@ -1,5 +1,6 @@
 # progaga
 // Вьюгина Анастасия 108 группа 7 семинар 19 задача
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
